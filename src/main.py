@@ -1,4 +1,5 @@
 import pygame
+import shared.ships as ships
 from settings import Settings
 from pathlib import Path
 
@@ -11,6 +12,7 @@ def get_max_displayscale(game_width: int, game_height: int) -> int:
     max_h = int(sys_display.current_h / game_height)
     max_w = int(sys_display.current_w / game_width)
     return min(max_h, max_w)
+
 
 def main():
     pygame.init()
